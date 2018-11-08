@@ -1,0 +1,11 @@
+<div>
+  <input type="search" placeholder="search your post"/>
+  <input type="submit" value="Search"/>
+</div>
+<ul *ngFor="let post of posts">
+  <li>
+    <span>{{post.body}}
+      <app-comments [post]="post"></app-comments>
+    </span>
+  </li>
+</ul>
