@@ -27,16 +27,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-#Basic fundamentals of RxJS
-##Observables
+# Basic fundamentals of RxJS
+## Observables
 It can be anything that needs to be observed. It may be a service call, value to be returned from a function or even a simple event handler
-##Observers
+## Observers
 These are the entities who are watching the Observables. These are nothing but a simple observer interface which consist of following methods:
     - next()    : Pushing next value in the data stream
     - error()   : Call error if there is any
     - complete(): Complete the operation
-##Subscribers
+## Subscribers
 These are the parties who would like to receive the values from Observables. This is also a kindo of Observers since it implements Observer interface.
 
-#NOTES
+# NOTES
 1. Observables are not executed until a object subscribes to it.
